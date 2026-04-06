@@ -1,4 +1,5 @@
 name: "My first workflow"
+
 on: 
   push:
     branches: 
@@ -6,9 +7,10 @@ on:
   pull_request:
     branches: 
       - main
+
 jobs: 
   test:
     runs-on: windows-latest
     steps:
       - name: "Say hello"
-        run: "Hello from GitHub Actions 🙌" 
+        run: echo "Hello from GitHub Actions 🙌"
